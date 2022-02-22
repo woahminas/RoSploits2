@@ -14,8 +14,7 @@ local UICorner_2 = Instance.new("UICorner")
 --Properties:
 
 Loader.Name = "Loader"
-Loader.Parent = game.CoreGui
-Loader.Enabled = false
+Loader.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = Loader
@@ -64,7 +63,7 @@ UICorner_2.Parent = Frame
 
 -- Scripts:
 
-local function LKCUDM_fake_script() -- TextLabel.LoadingScript 
+local function JFOPOVZ_fake_script() -- TextLabel.LoadingScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local txt = script.Parent
@@ -94,8 +93,8 @@ local function LKCUDM_fake_script() -- TextLabel.LoadingScript
 	
 	
 end
-coroutine.wrap(LKCUDM_fake_script)()
-local function LTCI_fake_script() -- Frame.run 
+coroutine.wrap(JFOPOVZ_fake_script)()
+local function LEIU_fake_script() -- Frame.run 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -123,4 +122,4 @@ local function LTCI_fake_script() -- Frame.run
 		script.Parent.Parent.Parent.Loader.Enabled = false
 	end
 end
-coroutine.wrap(LTCI_fake_script)()
+coroutine.wrap(LEIU_fake_script)()
