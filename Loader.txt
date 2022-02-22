@@ -1,0 +1,123 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local freeze = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Frame.Position = UDim2.new(0.367946923, 0, 0.333965838, 0)
+Frame.Size = UDim2.new(0, 189, 0, 174)
+Frame.Visible = false
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.122758493, 0, 0.700576663, 0)
+TextLabel.Size = UDim2.new(0, 234, 0, 31)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Waiting to load"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+freeze.Name = "freeze"
+freeze.Parent = Frame
+freeze.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+freeze.BackgroundTransparency = 1.000
+freeze.Position = UDim2.new(0.152577236, 0, 0.881417096, 0)
+freeze.Size = UDim2.new(0, 130, 0, 11)
+freeze.Font = Enum.Font.SourceSansBold
+freeze.Text = "Do not panic if freeze"
+freeze.TextColor3 = Color3.fromRGB(255, 255, 255)
+freeze.TextScaled = true
+freeze.TextSize = 14.000
+freeze.TextWrapped = true
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.196458995, 0, 0.0542123765, 0)
+ImageLabel.Size = UDim2.new(0, 114, 0, 114)
+ImageLabel.Image = "rbxassetid://8860820090"
+ImageLabel.ScaleType = Enum.ScaleType.Fit
+
+UICorner.CornerRadius = UDim.new(0.300000012, 8)
+UICorner.Parent = ImageLabel
+
+UICorner_2.Parent = Frame
+
+-- Scripts:
+
+local function HVKE_fake_script() -- TextLabel.LoadingScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local txt = script.Parent
+	
+	repeat wait() until game:IsLoaded()
+	
+	txt.Text = "Loading..."
+	wait(0.5)
+	txt.Text = "Loading.."
+	wait(0.5)
+	txt.Text = "Loading."
+	wait(0.5)
+	txt.Text = "Loading..."
+	wait(0.5)
+	txt.Text = "Loading.."
+	wait(0.5)
+	txt.Text = "Loading."
+	wait(0.5)
+	txt.Text = "Loading..."
+	wait(0.5)
+	txt.Text = "Loading.."
+	wait(0.5)
+	txt.Text = "Loading."
+	wait(0.5)
+	txt.Text = "Loadded"
+	wait(0.5)
+	
+	
+end
+coroutine.wrap(HVKE_fake_script)()
+local function FBONQCQ_fake_script() -- Frame.run 
+	local script = Instance.new('LocalScript', Frame)
+
+	
+	repeat wait() until game:IsLoaded()
+	
+	
+	wait(5)
+	if game.PlaceId == 155615604 then
+		script.Parent.TextLabel.Text = "Prison life, Running script now..."
+		wait(1)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/woahminas/RoSploits/main/Script.txt", true))()
+		
+		
+		script.Parent.Parent.Parent.ScreenGui.Enabled = false
+	elseif game.PlaceId == 606849621 then
+		script.Parent.TextLabel.Text = "Jail break, Running script now..."
+		wait(1)
+		
+		script.Parent.Parent.Parent.ScreenGui.Enabled = false
+	else
+		script.Parent.TextLabel.Text = "No games were detected. Running universal"
+		wait(5)
+		script.Parent.Parent.Parent.ScreenGui.Enabled = false
+	end
+end
+coroutine.wrap(FBONQCQ_fake_script)()
