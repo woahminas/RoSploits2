@@ -42,7 +42,7 @@ local pain = Instance.new("TextLabel")
 --Properties:
 
 PrisonLife.Name = "Prison Life"
-PrisonLife.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
+PrisonLife.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 PrisonLife.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main.Name = "main"
