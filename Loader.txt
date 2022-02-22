@@ -105,7 +105,7 @@ local function FBONQCQ_fake_script() -- Frame.run
 	if game.PlaceId == 155615604 then
 		script.Parent.TextLabel.Text = "Prison life, Running script now..."
 		wait(1)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/woahminas/RoSploits/main/Script.txt", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/woahminas/RoSploits2/main/PrisonLife.txt?token=GHSAT0AAAAAABRXJHJU2GRWN6CHWT6RSDOWYQVBJKQ", true))()
 		
 		
 		script.Parent.Parent.Parent.ScreenGui.Enabled = false
