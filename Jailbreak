@@ -42,7 +42,7 @@ local pain = Instance.new("TextLabel")
 --Properties:
 
 Jailbreak.Name = "Jailbreak"
-Jailbreak.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Jailbreak.Parent = game.CoreGui
 Jailbreak.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main.Name = "main"
