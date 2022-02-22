@@ -62,7 +62,7 @@ UICorner_2.Parent = Frame
 
 -- Scripts:
 
-local function PIST_fake_script() -- TextLabel.LoadingScript 
+local function NJQO_fake_script() -- TextLabel.LoadingScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local txt = script.Parent
@@ -92,8 +92,8 @@ local function PIST_fake_script() -- TextLabel.LoadingScript
 	
 	
 end
-coroutine.wrap(PIST_fake_script)()
-local function QOOPQFG_fake_script() -- Frame.run 
+coroutine.wrap(NJQO_fake_script)()
+local function HIHOVSA_fake_script() -- Frame.run 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -109,9 +109,10 @@ local function QOOPQFG_fake_script() -- Frame.run
 		
 		script.Parent.Parent.Parent.ScreenGui.Enabled = false
 	elseif game.PlaceId == 606849621 then
+		
 		script.Parent.TextLabel.Text = "Jail break, Running script now..."
 		wait(1)
-		
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/woahminas/RoSploits2/main/Jailbreak", true))()
 		script.Parent.Parent.Parent.ScreenGui.Enabled = false
 	else
 		script.Parent.TextLabel.Text = "No games were detected. Running universal"
@@ -119,4 +120,4 @@ local function QOOPQFG_fake_script() -- Frame.run
 		script.Parent.Parent.Parent.ScreenGui.Enabled = false
 	end
 end
-coroutine.wrap(QOOPQFG_fake_script)()
+coroutine.wrap(HIHOVSA_fake_script)()
