@@ -42,7 +42,8 @@ local pain = Instance.new("TextLabel")
 --Properties:
 
 PrisonLife.Name = "Prison Life"
-PrisonLife.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PrisonLife.Parent = game.CoreGui
+PrisonLife.Enabled = false
 PrisonLife.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main.Name = "main"
@@ -377,7 +378,7 @@ pain.TextWrapped = true
 
 -- Scripts:
 
-local function LWTL_fake_script() -- WORKYOUPIECEOFS.LocalScript 
+local function UTOXP_fake_script() -- WORKYOUPIECEOFS.LocalScript 
 	local script = Instance.new('LocalScript', WORKYOUPIECEOFS)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -389,8 +390,8 @@ local function LWTL_fake_script() -- WORKYOUPIECEOFS.LocalScript
 		script.Parent.Parent.DiscordB.Visible = false
 	end)
 end
-coroutine.wrap(LWTL_fake_script)()
-local function HWPG_fake_script() -- Infob.LocalScript 
+coroutine.wrap(UTOXP_fake_script)()
+local function KTBI_fake_script() -- Infob.LocalScript 
 	local script = Instance.new('LocalScript', Infob)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -402,8 +403,8 @@ local function HWPG_fake_script() -- Infob.LocalScript
 		script.Parent.Parent.DiscordB.Visible = false
 		end)
 end
-coroutine.wrap(HWPG_fake_script)()
-local function LGEM_fake_script() -- Discord.LocalScript 
+coroutine.wrap(KTBI_fake_script)()
+local function QRONCHS_fake_script() -- Discord.LocalScript 
 	local script = Instance.new('LocalScript', Discord)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -415,32 +416,32 @@ local function LGEM_fake_script() -- Discord.LocalScript
 		script.Parent.Parent.DiscordB.Visible = true
 	end)
 end
-coroutine.wrap(LGEM_fake_script)()
-local function GFUZUVT_fake_script() -- Execute1.LocalScript 
+coroutine.wrap(QRONCHS_fake_script)()
+local function KIWMJNB_fake_script() -- Execute1.LocalScript 
 	local script = Instance.new('LocalScript', Execute1)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
 	end)
 end
-coroutine.wrap(GFUZUVT_fake_script)()
-local function DFDBMW_fake_script() -- Execute1_2.hell 
+coroutine.wrap(KIWMJNB_fake_script)()
+local function KFSGZR_fake_script() -- Execute1_2.hell 
 	local script = Instance.new('LocalScript', Execute1_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
 	end)
 end
-coroutine.wrap(DFDBMW_fake_script)()
-local function CBLV_fake_script() -- Execute1_3.LocalScript 
+coroutine.wrap(KFSGZR_fake_script)()
+local function YFIKN_fake_script() -- Execute1_3.LocalScript 
 	local script = Instance.new('LocalScript', Execute1_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/woahminas/crash/main/crsaher.txt?token=GHSAT0AAAAAABRXJHJUPMYGDHEPQOT2STOYYQP7TJA'), true))()
 	end)
 end
-coroutine.wrap(CBLV_fake_script)()
-local function NDHS_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(YFIKN_fake_script)()
+local function TDMC_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -449,17 +450,17 @@ local function NDHS_fake_script() -- TextButton_2.LocalScript
 		script.Parent.Parent.pain.Visible = false
 	end)
 end
-coroutine.wrap(NDHS_fake_script)()
-local function UPBGYH_fake_script() -- pain.LocalScript 
+coroutine.wrap(TDMC_fake_script)()
+local function NMWH_fake_script() -- pain.LocalScript 
 	local script = Instance.new('LocalScript', pain)
 
 	
 end
-coroutine.wrap(UPBGYH_fake_script)()
-local function HZAXF_fake_script() -- main.LocalScript 
+coroutine.wrap(NMWH_fake_script)()
+local function MRKFE_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(HZAXF_fake_script)()
+coroutine.wrap(MRKFE_fake_script)()
